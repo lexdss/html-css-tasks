@@ -1,0 +1,40 @@
+input[type="radio"]{
+	display: none;
+}
+input[type="checkbox"]{
+	display: none;
+}
+.buttons{
+	border-collapse: collapse;
+	font-family: Arial;
+	word-spacing: -0.3em;
+	font-size: 12px;
+}
+.buttons i:hover{
+	background-color: #E6E6E6;
+	cursor: pointer;
+	transition: 0.5s;
+}
+input:checked + i:hover{
+	background-color: #E6E6E6;;
+	box-shadow: inset 0 0 7px #B7C0C9;
+} 
+label i{
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	padding: 10px 15px;
+	font-style: normal;
+	display: inline-block;
+}
+input:checked + i{
+	background-color: #E6E6E6;;
+	box-shadow: inset 0 0 7px #B7C0C9;
+}
+.buttons label:last-child i{
+	border-radius: 0 5px 5px 0;
+}
+.buttons label:first-child i{
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 0 0 5px;
+}
