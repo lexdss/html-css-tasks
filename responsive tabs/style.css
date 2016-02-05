@@ -1,0 +1,56 @@
+.tab-conteiner{
+	font-family: Arial;
+	width: 75%;
+	margin: 0 auto;
+}
+.tab-conteiner > input[type="radio"]{
+	display: none;
+}
+.tab{
+	display: inline-block;
+	border-radius: 3px 3px 0 0;
+	padding: 10px 45px;
+	background-color: #525252;
+	color: #E5E4C9;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+.tab-conteiner > input:checked + label > .tab{
+	background-color: #B8B63E;
+}
+.tab-conteiner .tab:hover{
+	background-color: #667876;
+}
+.tab-content{
+	display: none;
+	background-color: #F7EEC6;
+	border-top: 4px solid #B8B63E;
+	border-radius: 0 0 3px 3px;
+	padding: 15px;
+}
+.tab-conteiner > input:checked + label + input + label + input + label + input + label + .tab-content{
+	display: block;
+}
+.tab-conteiner > input:checked + label + input + label + input + label + .tab-content + .tab-content{
+	display: block;
+}
+.tab-conteiner > input:checked + label + input + label + .tab-content + .tab-content + .tab-content{
+	display: block;
+}
+.tab-conteiner > input:checked + label + .tab-content + .tab-content + .tab-content + .tab-content{
+	display: block;
+}
+@media screen and (max-width: 768px){
+.tab-conteiner{
+	width: 100%;
+}
+.tab{
+	display: block;
+	margin-bottom: 2px;
+	border-radius: 0;
+	text-align: center;
+}
+.tab-conteiner > label:last-of-type > .tab{
+	margin-bottom: 0;
+}
+}
